@@ -32,5 +32,6 @@
         <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="com.maxmind.geoip2:geoip2:2.8.0-rc1" level="project" />
   </component>
 </module>

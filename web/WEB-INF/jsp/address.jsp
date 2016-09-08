@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h2>Student Information</h2>
+<h2>Enter IP</h2>
 <form:form method="POST" action="/addAddress">
     <table>
         <tr>

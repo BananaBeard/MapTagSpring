@@ -6,8 +6,6 @@
 
     <display-name>Spring MVC Form Handling</display-name>
 
-    <display-name>Spring MVC Form Handling</display-name>
-
     <servlet>
         <servlet-name>MapTag</servlet-name>
         <servlet-class>

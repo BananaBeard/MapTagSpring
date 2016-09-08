@@ -5,11 +5,12 @@
 </head>
 <body>
 
-<h2>Submitted Student Information</h2>
+<h2>IP Address Information</h2>
 <table>
     <tr>
         <td>IP</td>
         <td>${ip}</td>
+        <td>${latitude}</td>
     </tr>
 </table>
 </body>

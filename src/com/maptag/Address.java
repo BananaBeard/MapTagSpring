@@ -1,28 +1,31 @@
 package com.maptag;
 
 public class Address {
-    private Integer age;
     private String ip;
-    private Integer id;
+    private double latitude;
+    private double longitude;
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-    public Integer getAge() {
-        return age;
+    public double getLongitude() {
+        return longitude;
     }
 
-    public void setIp(String ip) {
-        this.ip = ip;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
     public String getIp() {
         return ip;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    public Integer getId() {
-        return id;
+    public void setIp(String ip) {
+        this.ip = ip.trim();
     }
 }
