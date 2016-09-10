@@ -29,12 +29,12 @@ public class AddressService {
 
     static {
         try {
-            File gradeList = new File("GeoLite2-City.mmdb");
-            if (!gradeList.exists()) {
+            File dataBasePath = new File("GeoLite2-City.mmdb");
+            if (!dataBasePath.exists()) {
                 throw new FileNotFoundException("Failed to find file: " +
-                        gradeList.getAbsolutePath());
+                        dataBasePath.getAbsolutePath());
             }
-            reader = new DatabaseReader.Builder(gradeList).build();
+            reader = new DatabaseReader.Builder(dataBasePath).build();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -13,18 +13,6 @@ public class AddressController {
 
     private AddressService addressService;
 
-    //private AddressService addressService = new AddressService();
-
-    //private double lat;
-
-   /* public AddressService getAddressService() {
-        return addressService;
-    }
-
-    public void setAddressService(AddressService addressService) {
-        this.addressService = addressService;
-    }*/
-
     @RequestMapping(value = "/address", method = RequestMethod.GET)
     public ModelAndView address() {
         return new ModelAndView("address", "command", new Address());

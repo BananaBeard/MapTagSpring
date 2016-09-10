@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Spring MVC Form Handling</title>
+    <title>IP Address Location</title>
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
         <style>
             html, body {
                 height: 80%;
-                margin: 5%;
+                margin: 0%;
                 padding: 0;
             }
             #map {

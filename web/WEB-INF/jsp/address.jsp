@@ -1,23 +1,28 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
-    <title>Spring MVC Form Handling</title>
+    <meta name="viewport" content="width=device-width">
+    <title>IP Address Location</title>
+    <style type="text/css">
+        <%@include file="/resources/css/CSS.css" %>
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet">
 </head>
 <body>
+<div id="main">
+<div id="form">
+    <h2>Enter IP</h2>
+    <form:form method="POST" action="/addAddress">
 
-<h2>Enter IP</h2>
-<form:form method="POST" action="/addAddress">
-    <table>
-        <tr>
-            <td><form:label path="ip">IP</form:label></td>
-            <td><form:input path="ip" /></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="submit" value="Submit"/>
-            </td>
-        </tr>
-    </table>
-</form:form>
+            <form:input path="ip" />
+        </div>
+<div id="button">
+            <input type="submit" value="Submit"/>
+</div>
+
+    </form:form>
+
+</div>
 </body>
 </html>
