@@ -7,35 +7,14 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
         <title>Control positioning</title>
-        <style>
-            html, body {
-                height: 80%;
-                margin: 0%;
-                padding: 0;
-            }
-            #map {
-                height: 100%;
-            }
+        <style type="text/css">
+            <%@include file="/resources/css/RsltStyle.css" %>
         </style>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet">
     </head>
 </head>
 <body>
 <div id="map"></div>
-<h2>IP Address Information</h2>
-<table>
-    <tr>
-        <td>IP</td>
-        <td>${ip}</td>
-    </tr>
-    <tr>
-        <td>Lat:</td>
-        <td>${latitude}</td>
-    </tr>
-    <tr>
-        <td>Lon:</td>
-        <td>${longitude}</td>
-    </tr>
-</table>
 <script>
     function initMap() {
 
@@ -70,5 +49,11 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCapyxcJWT8XDuReEakbvFbVksfCPC00NE&callback=initMap">
 </script>
+<div id="inf">
+    IP Address Information <br>
+    IP:  ${ip} <br>
+    Lat: ${latitude} <br>
+    Lon: ${longitude}
+</div>
 </body>
 </html>
