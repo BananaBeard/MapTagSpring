@@ -41,15 +41,13 @@ public class AddressService {
     }
 
 
-    public Location findCoordinatesOfIP(String address) {
+    public Location findCoordinatesOfIP(String address) throws GeoIp2Exception {
         InetAddress ipAddress = null;
         Location location = null;
         try {
             ipAddress = InetAddress.getByName(address);
             CityResponse response = reader.city(ipAddress);
             location = response.getLocation();
-        } catch (GeoIp2Exception e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

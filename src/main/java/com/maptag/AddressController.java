@@ -1,5 +1,6 @@
 package main.java.com.maptag;
 
+import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.record.Location;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -21,13 +22,17 @@ public class AddressController {
     @RequestMapping(value = "/addAddress", method = RequestMethod.POST)
     public String addAddress(@ModelAttribute("MapTagSpring")Address address, ModelMap model) throws InterruptedException {
 
-        addressService = new AddressService();
-        Location location = addressService.findCoordinatesOfIP(address.getIp());
+        try {
+            addressService = new AddressService();
+            Location location = addressService.findCoordinatesOfIP(address.getIp());
 
-        model.addAttribute("ip", address.getIp());
-        model.addAttribute("latitude", location.getLatitude());
-        model.addAttribute("longitude", location.getLongitude());
-
-        return "result";
+            model.addAttribute("ip", address.getIp());
+            model.addAttribute("latitude", location.getLatitude());
+            model.addAttribute("longitude", location.getLongitude());
+            return "result";
+        } catch (GeoIp2Exception e) {
+            e.printStackTrace();
+            return "error";
+        }
     }
 }

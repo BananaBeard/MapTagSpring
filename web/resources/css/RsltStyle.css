@@ -1,12 +1,12 @@
 body {
-    background: url('http://www.wallpaperhd.pk/wp-content/uploads/2015/05/sea-mountain-sun-sky-vector-wallpaper.jpg') no-repeat center center fixed;
+    чbackground: url('http://www.wallpaperhd.pk/wp-content/uploads/2015/05/sea-mountain-sun-sky-vector-wallpaper.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 #map {
-    height: 70%;
+    height: 65%;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;

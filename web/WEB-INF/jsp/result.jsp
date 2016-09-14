@@ -3,15 +3,13 @@
 <html>
 <head>
     <title>IP Address Location</title>
-    <head>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">
-        <title>Control positioning</title>
-        <style type="text/css">
-            <%@include file="/resources/css/RsltStyle.css" %>
-        </style>
-        <link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet">
-    </head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Control positioning</title>
+    <style type="text/css">
+        <%@include file="/resources/css/RsltStyle.css" %>
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet">
 </head>
 <body>
 <div id="map"></div>
