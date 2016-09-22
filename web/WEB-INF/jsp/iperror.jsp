@@ -12,9 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100" rel="stylesheet">
 </head>
 <body>
-<div id="inf" >
-    <br>
-    Greetings! <br>
-    You are debil.
+<div id="errinf" >
+    Entered IP is not correct.
 </div>
 </body>

@@ -1,5 +1,5 @@
 body {
-    чbackground: url('http://www.wallpaperhd.pk/wp-content/uploads/2015/05/sea-mountain-sun-sky-vector-wallpaper.jpg') no-repeat center center fixed;
+    background: url('http://www.wallpaperhd.pk/wp-content/uploads/2015/05/sea-mountain-sun-sky-vector-wallpaper.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,7 +16,7 @@ body {
     border-radius: 40px;
     opacity:0.7;
     padding-top: 10px;
-    margin-top:10px;
+    margin-top:20px;
     width:30%;
     height: 210px;
     position:center;
@@ -27,5 +27,23 @@ body {
     font-size:25px;
     font-family: 'Exo 2', sans-serif;
     line-height:45px;
+    background-color: #2B2B2B;
+}
+
+#errinf{
+    border-radius: 40px;
+    opacity:0.7;
+    padding-top: 10px;
+    margin-top:35vh;
+    width:30%;
+    height: 210px;
+    position:center;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-align:center;
+    font-size:25px;
+    font-family: 'Exo 2', sans-serif;
+    line-height:210px;
     background-color: #2B2B2B;
 }

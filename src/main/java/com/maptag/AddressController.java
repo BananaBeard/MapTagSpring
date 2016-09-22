@@ -32,7 +32,7 @@ public class AddressController {
             return "result";
         } catch (GeoIp2Exception e) {
             e.printStackTrace();
-            return "error";
+            return "iperror";
         }
     }
 }
